@@ -135,8 +135,15 @@ function display_page(vol,page) {
    let android = ` <a href='${urlcur}' style='position:relative; left:100px;'>Click to load pdf</a>`;
    //let imageElt = `<object id='servepdf' type='application/pdf' data='${urlcur}' 
    //           style='width: 98%; height:98%'> ${android} </object>`;
-   let imageElt = `<object id='servepdf' type='application/pdf' data='${urlcur}' 
+   let imageElt;
+   /*
+   imageElt = `<object id='servepdf' type='application/pdf' data='${urlcur}' 
               width="98%"; height="98%"> ${android} </object>`;
+   imageElt = `<embed id='servepdf' type='application/pdf' src='${urlcur}' 
+              width="98%"; height="98%"/>` ;
+   imageElt = `<iframe src="${urlcur}" style="width:100%;height:700px;"></iframe>`;
+   */
+   imageElt = `<iframe src="${urlcur}" style="width:100%;height:580px;"></iframe>`;
    elt2.innerHTML = imageElt;
   }else {
    html = `Vol ${vol}, Page ${page} NOT FOUND`;

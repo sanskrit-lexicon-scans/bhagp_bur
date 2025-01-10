@@ -10,9 +10,10 @@
   display: grid;
   grid-column-gap: 5px;
   grid-row-gap:2px;
-  background-color: #2196F3;
+  background-color: #2196F3; /* green;*/
   padding: 10px;
-  width: 905px;
+  width: 1005px;
+  /*width: 100%*/
 }
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -23,17 +24,19 @@
 }
 .item1 {
     grid-area: 1 / 1 / span 1 / span 2;
-    width: 905px; height:50px;
+    width: 100%; height:50px;
+    
 }
 .item2 {
   grid-area: 2 / 1 / span 1 / span 1;
-  width: 300px; height: 600px;
+  width: 200px; height: 600px;
   overflow: auto;
 }
 .item3 {
   grid-area: 2 / 2 / span 1 / span 1;
-  width: 600px; height: 600px;
-  overflow: auto;
+  width: 800px; height: 600px;
+  /*color: red;*/
+  /*overflow: auto;*/
 }
 
 </style>
@@ -115,7 +118,7 @@ ul, #indexUL {
 </style>
 </head>
 <body>
-<div class="grid-container">xxx
+<div class="grid-container">
  <div id="title" class="item1">
   <span style="font-size:28px; padding-left:10px;">Bhāgavata Purāṇa, Burnouf edition</span>
   <form style="display: inline-block;"
